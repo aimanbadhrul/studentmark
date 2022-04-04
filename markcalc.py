@@ -2,18 +2,6 @@ import streamlit as st
 
 st.header("Check student marks here")
 
-
-readme = st.checkbox("readme")
-
-if readme:
-
-    st.write("""
-        This is a mark checking demo. You may get the codes via [github](https://github.com/richieyuyongpoh/markchecking)
-        """)
-
-    st.write ("For more info, please contact:")
-
-    st.write("[Dr. Yong Poh Yu](https://www.linkedin.com/in/yong-poh-yu/)")
     
 
 st.write("Please enter your mark. To stop the algorithm, enter x .\n\n"
