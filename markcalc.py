@@ -1,31 +1,38 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
 
-st.title('Check student marks')
+st.header("Check student marks here")
 
-y = 50 # minimum passing score
 
-while True:
-  x = input("Please enter your mark. To stop the algorithm, enter x .\n\n")
-  if x=="x": 
+readme = st.checkbox("readme")
 
-        print ("\nThank you for using our service.\n")
-        break
-  else:
-        try:
-            val = int(x)
+if readme:
+
+    st.write("""
+        This is a mark checking demo. You may get the codes via [github](https://github.com/richieyuyongpoh/markchecking)
+        """)
+
+    st.write ("For more info, please contact:")
+
+    st.write("[Aiman Badhrul](https://www.linkedin.com/in/aimanbadhrul/)")
+    
+
+st.write("Please enter your mark. To stop the algorithm, enter x .\n\n"
+         
+mark = st.text_input('Enter the mark here', '50')
+         
+         
+try:
+    val = float(mark)
             
-            if (val > 100 or val < 0):
-                print("\nPlease enter a valid mark.\n")
+    if (val > 100 or val < 0):
+        st.write("\nPlease enter a valid mark.\n")
                 
-            elif val >= y:
-                print("\nYou passed your exam. Keep it up!\n")
-                
-            else:
-
-                print("\nUnfortunately, you did not pass your exam. Work harder. You can make it.\n")
+    elif val >= y:
+        st.write("\nYou passed your exam. Keep it up!\n")
+       
+    else:
+        st.write("\nUnfortunately, you did not pass your exam. Work harder. You can make it.\n")
 
             
-        except ValueError:
-            print("\nPlease enter a number.\n")
+except ValueError:
+    st.write("\nPlease enter a number.\n")
