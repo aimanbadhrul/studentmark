@@ -13,7 +13,7 @@ if readme:
 
     st.write ("For more info, please contact:")
 
-    st.write("[Aiman Badhrul](https://www.linkedin.com/in/aimanbadhrul/)")
+    st.write("[Dr. Yong Poh Yu](https://www.linkedin.com/in/yong-poh-yu/)")
     
 
 st.write("Please enter your mark. To stop the algorithm, enter x .\n\n"
