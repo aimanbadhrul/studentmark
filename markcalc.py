@@ -1,12 +1,12 @@
 y = 50 # minimum passing score
 
 while True:
-	x = input("Please enter your mark. To stop the algorithm, enter x .\n\n")
-	if x=="x": 
+  x = input("Please enter your mark. To stop the algorithm, enter x .\n\n")
+  if x=="x": 
 
         print ("\nThank you for using our service.\n")
         break
-    else:
+  else:
         try:
             val = int(x)
             
