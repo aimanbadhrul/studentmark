@@ -1,3 +1,5 @@
+st.title('Check student marks')
+
 y = 50 # minimum passing score
 
 while True:
