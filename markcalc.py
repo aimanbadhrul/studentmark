@@ -1,6 +1,6 @@
 import streamlit as st
 y = 50
-st.header("Mark Checking Demo")
+st.header("Check student marks here")
 
 
 readme = st.checkbox("readme")
@@ -8,12 +8,12 @@ readme = st.checkbox("readme")
 if readme:
 
     st.write("""
-        This is a mark checking demo. You may get the codes via [github](https://github.com/richieyuyongpoh/markchecking)
+        This is a mark checking demo. You may get the codes via [github](https://github.com/aimanbadhrul/studentmark/blob/main/markcalc.py)
         """)
 
     st.write ("For more info, please contact:")
 
-    st.write("[Dr. Yong Poh Yu](https://www.linkedin.com/in/yong-poh-yu/)")
+    st.write("[Aiman Badhrulhisham](https://www.linkedin.com/in/aimanbadhrul/)")
     
 
 st.write("Please enter your mark. To stop the algorithm, enter x .\n\n")
@@ -28,7 +28,7 @@ try:
         st.write("\nPlease enter a valid mark.\n")
                 
     elif val >= y:
-        st.write("\nYou passed your exam. Keep it up!\n")
+        st.write("\nCongratulations! You passed the exam!\n")
        
     else:
         st.write("\nUnfortunately, you did not pass your exam. Work harder. You can make it.\n")
